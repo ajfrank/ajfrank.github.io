@@ -164,9 +164,10 @@ body {
 }
 
 .obackground{
-  width: 700px;
-  height: 220px;
-  padding-top: 7px;
+  width: 50em;
+  height: 18em;
+  padding-top: 1em;
   background-color: rgba(255,255,255,.8);
   color: black;
+  margin: 0, auto;
 }
