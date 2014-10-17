@@ -25,9 +25,7 @@ $(function(){
 				var videos = data.items; // storing this variable for looping later
 				
 				clearBackground(); //calls function to change background color
-				appendVideos(videos); //calls function below to display videos
-				appendTitles(videos); // calls function to append the titles
-			
+				appendVideos(videos); //calls function below to display videos			
 			},
 			error: function (xhr) {
 				console.log(xhr); //logs error to console so we can parse
@@ -62,11 +60,3 @@ $(function(){
 				)//closes the <li>
 			} // closes our for loop
 	} //closes function appendVideos
-
-	function appendTitles(videos) {
-		for (var i = 0; i < videos.length; i++) { //for loop - loops through # of items in the array
-		
-			console.log(videos[i].snippet.title) //writes the video titles to the console
-	
-		} // closes our for loop
-	 } //closes function appendVideos
