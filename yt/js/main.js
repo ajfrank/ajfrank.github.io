@@ -53,7 +53,7 @@ $(function(){
 					.append($('<figcaption>')
 						.append($('<a>') // append to that ID an <a> tag
 							.attr('href', 'https://www.youtube.com/watch?v='+videos[i].id.videoId)  // make the attribute href of that tag as follows
-								.text(videos[i].snippet.title)
+								.text(videos[i].snippet.title) //inserts the following string as text
 						) //closes <a>	
 					) //closes <figcaption>
 					)//closes <figure>
