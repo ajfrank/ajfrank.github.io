@@ -95,7 +95,8 @@
   }
   #group1 .parallax__layer--base {
     background: url(http://cdn.cats-paradise.net/wp-content/uploads/2014/02/Scottish-Fold-Kitten1.jpg);
-    background-size: 100%;
+    background-size: 100% 125%;
+    background-repeat: no-repeat;
   }
 
   #group2 {
@@ -103,7 +104,8 @@
   }
   #group2 .parallax__layer--back {
     background: url(http://critterbabies.com/wp-content/gallery/kittens/803864926_1375572583.jpg);
-    background-size: 100%;
+    background-size: 100% 125%;
+    background-repeat: no-repeat;
   }
 
   #group3 {
@@ -111,7 +113,7 @@
   }
   #group3 .parallax__layer--base {
     background: url(http://hdwallpaper.freehdw.com/0007/animals_widewallpaper_adorable-kitty_61459.jpg);
-  background-size:100%;
+    background-size:100% 125%;
   }
 
 
@@ -120,7 +122,8 @@
   }
   #group4 .parallax__layer--deep {
     background: url(http://critterbabies.com/wp-content/gallery/kittens/happy-kitten-kittens-5890512-1600-1200.jpg);
-    background-size: 100%;
+    background-size: 100% 125%;
+    background-repeat: no-repeat;
   }
 
 /*Style the text*/
@@ -128,6 +131,7 @@
 #text1{
   background: rgba(176,24,24,.6);
   color: white;
+  margin-top: 5%;
 }
 
 #text2{
