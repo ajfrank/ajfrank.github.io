@@ -112,7 +112,7 @@
     z-index: 4; /* slide over group 2 and 4 */
   }
   #group3 .parallax__layer--base {
-    background: url(http://hdwallpaper.freehdw.com/0007/animals_widewallpaper_adorable-kitty_61459.jpg);
+    background: url(../images/ezra.JPG);
     background-size:100% 125%;
   }
 
@@ -124,6 +124,14 @@
     background: url(http://critterbabies.com/wp-content/gallery/kittens/happy-kitten-kittens-5890512-1600-1200.jpg);
     background-size: 100% 125%;
     background-repeat: no-repeat;
+  }
+
+  #group5 {
+    z-index: 3; /* slide over group 4 and 6 */
+  }
+  #group5 .parallax__layer--base {
+    background: url(http://hdwallpaper.freehdw.com/0007/animals_widewallpaper_adorable-kitty_61459.jpg);
+    background-size: 100% 125%;
   }
 
 /*Style the text*/
@@ -139,7 +147,7 @@
 }
 
 #text3{
-  background: rgba(255,255,50,.6);
+  background: rgba(255,255,255,.6);
 }
 
 #text4, #text5{
@@ -149,6 +157,10 @@
 
 #text5{
   margin-top: 15%;
+}
+
+#text6{
+  background: rgba(255,255,50,.6);
 }
 
 @media screen and (max-width: 1310px)  {
