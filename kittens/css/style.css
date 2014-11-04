@@ -112,7 +112,7 @@
     z-index: 4; /* slide over group 2 and 4 */
   }
   #group3 .parallax__layer--base {
-    background: url(../images/ezra.JPG);
+    background: url(../images/ezra2.jpeg);
     background-size:100% 125%;
   }
 
@@ -147,7 +147,8 @@
 }
 
 #text3{
-  background: rgba(255,255,255,.6);
+  margin-top: 5%;
+  background: rgba(102,255,102,.5);
 }
 
 #text4, #text5{
