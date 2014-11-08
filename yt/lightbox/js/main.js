@@ -71,7 +71,7 @@ $(document).ready(function() {
 			media : true
 		},
 		width: "90%",
-		height: "90%",
+		autoHeight: true,
 		aspectRatio: true,
 		scrolling: 'no'
 	});
