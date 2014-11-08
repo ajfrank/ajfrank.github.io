@@ -70,9 +70,8 @@ $(document).ready(function() {
 		helpers : {
 			media : true
 		},
-		autoWidth: true,
-		autoHeight: true,
-		aspectRatio: true,
+		height:"90%",
+		width: "90%",
 		scrolling: 'no'
 	});
 });
