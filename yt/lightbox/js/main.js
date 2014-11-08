@@ -70,8 +70,8 @@ $(document).ready(function() {
 		helpers : {
 			media : true
 		},
-		height: 720,
-		width: 1280,
+		height: 827,
+		width: 1469,
 		aspectRatio: true,
 		scrolling: 'no'
 	});
