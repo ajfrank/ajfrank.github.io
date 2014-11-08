@@ -70,7 +70,7 @@ $(document).ready(function() {
 		helpers : {
 			media : true
 		},
-		width: "90%",
+		autoWidth: true,
 		autoHeight: true,
 		aspectRatio: true,
 		scrolling: 'no'
