@@ -94,7 +94,7 @@
     z-index: 5; /* slide over group 2 */
   }
   #group1 .parallax__layer--base {
-    background: url(http://cdn.cats-paradise.net/wp-content/uploads/2014/02/Scottish-Fold-Kitten1.jpg);
+    background: url(../images/fold.jpg);
     background-size: 100% 125%;
     background-repeat: no-repeat;
   }
