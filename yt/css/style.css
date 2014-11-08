@@ -3,7 +3,8 @@
 body {
   background: url(../images/background4.jpg);
   background-size: cover;
-  font: 1.5em 'Cantora One', sans-serif;
+  font-family:'Cantora One', sans-serif;
+  font-size: 16px;
 }
 
 /*Div container for images*/
@@ -14,7 +15,7 @@ body {
   overflow: hidden;
   display: inline-block;
   margin: 2%;
-  border: .05em solid lightgrey;
+  border: .1em solid lightgrey;
   border-radius: 2em;
 }
 
@@ -27,7 +28,7 @@ body {
 /*Wrapper for nav*/
 header{
   background: rgba(184, 184, 184, .85);
-  height: 5em;
+  height: 8em;
   margin: 0 auto;
   opacity:.95;
 }
@@ -118,7 +119,7 @@ nav[role="full-horizontal"] ul > li > a {
 }
 
 #search-val{
-  font-size: 2em;
+  font-size: 3em;
   padding: .2em;  
   color: #999999;
   width: 95%;
@@ -161,7 +162,7 @@ nav[role="full-horizontal"] ul > li > a {
     display: inline-block;
     width: 350px;
     margin: 0;
-    padding: 20px;
+    padding-right: 3em;
     text-align: left;
     position: relative;
 }
@@ -195,7 +196,7 @@ nav[role="full-horizontal"] ul > li > a {
     background: rgba(230, 33, 23, .8);
     color: white;
     text-decoration: none;
-    font-size:1.2em;
+    font-size:2em;
     width: 360px;
     height: 150px;
     vertical-align: center;
@@ -229,7 +230,7 @@ For that we first need to set the width and height of the figcaption and set the
     backface-visibility: hidden;
     transition: transform 0.3s, opacity 0.3s;
     background: none;
-    margin-top: -4em;
+    margin-top: -6.5em;
 }
 
 /*
@@ -242,50 +243,3 @@ On hover (or on touch) we will set the opacity to 1 and translate the figcaption
 }
 
 /*Additionally, we will position the text elements:*/
- 
-/* CS Style 3 - haven't played around with this yet */ 
-
-/*First, we need to set the overflow of the figure to hidden. Like this we won’t see anything that spills out when moving around:*/
-
-.cs-style-3 figure {
-    overflow: hidden;
-}
-
-/*The image needs a transition for the transform and on hover we will translate it 50px up:*/
-
-.cs-style-3 figure img {
-    transition: transform 0.4s;
-}
-
-/*The figcaption will be a bit higher than in the previous example and we will translate it out of the view of the figure. Let’s also add a transition for the transform and the opacity:*/ 
-
-.cs-style-3 figure:hover img,
-.cs-style-3 figure.cs-hover img {
-    transform: translateY(-50px);
-}
-
-.cs-style-3 figcaption {
-    height: 30px;
-    width: 40%;
-    top: auto;
-    bottom: 0;
-    opacity: 0;
-    transform: translateY(100%);
-    transition: transform 0.4s, opacity 0.1s 0.3s;
-}
-
-/*On hover we’ll set to opacity to 1 and translate it up. See how we have added two transitions? One for the normal state and one for the hover? This is how we can control what happens when we hover and when we hover out. The transition here will be applied on hover: we want the element to become opaque quickly while taking 0.4 seconds for the transform. When we hover out, the opacity will be set again to 0 but only after a delay of 0.3 seconds. This will make the effect look consistent and natural.*/
-
-.cs-style-3 figure:hover figcaption,
-.cs-style-3 figure.cs-hover figcaption {
-    opacity: 1;
-    transform: translateY(0px);
-    transition: transform 0.4s, opacity 0.1s;
-}
-
-/*Position our link*/
-
-.cs-style-3 figcaption a {
-    position: absolute;
-    font-size: 1.5em;
-}
