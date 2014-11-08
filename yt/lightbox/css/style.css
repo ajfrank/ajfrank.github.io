@@ -1,0 +1,263 @@
+/*Global Values*/
+
+body {
+  background: url(../images/background4.jpg);
+  background-size: cover;
+  font-family:'Cantora One', sans-serif;
+  font-size: 16px;
+}
+
+/*Div container for images*/
+
+.crop{
+  width: 360px;
+  height: 270px;
+  overflow: hidden;
+  display: inline-block;
+  margin: 2%;
+  border: .1em solid lightgrey;
+  border-radius: 2em;
+}
+
+.crop img{
+  margin-top: -45px;
+}
+
+/*Begin Nav CSS*/
+
+/*Wrapper for nav*/
+header{
+  background: rgba(184, 184, 184, .85);
+  height: 8em;
+  margin: 0 auto;
+  opacity:.95;
+}
+
+.branding, .navbuttons{
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.branding{
+  margin-right: 30%;
+  width: 20%;
+}
+
+#yt{
+  height: 168.35px;
+  width: 256.55px;
+  top: -20px;
+  left: 0px;
+  position: absolute;
+}
+
+.navbuttons{
+  width: 45%;
+  position: absolute;
+}
+
+nav[role="full-horizontal"] ul > li {
+  position: relative;
+  display: inline-block;
+  padding: .25em .5em;
+  margin: 0 .5em;
+  text-transform: uppercase;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  border-radius: .75em;
+  transition-duration: .3s;
+  transition-timing-function: ease-in-out;
+  transition-property: background, color, padding, border-radius;
+  box-shadow: 0.1em -0.1em 0 0.1em rgba(230, 33, 23, 0.2), inset 0 0 0 0.15em rgba(230, 33, 23, 0.4), -0.1em 0.1em 0 0.1em rgba(230, 33, 23, 0.2);
+}
+
+nav[role="full-horizontal"] ul > li:hover {
+  background-color:#e62117;
+  padding-left: 3em;
+  box-shadow: 0.1em -0.1em 0 0.1em   rgba(255, 255, 255,.2), inset 0 0 0 0.15em rgba(255, 255, 255, 0.4), -0.1em 0.1em 0 0.1em rgba(255, 255, 255, 0.2);
+}
+
+nav[role="full-horizontal"] ul > li:hover > a {
+  color: #fff;
+}
+
+nav[role="full-horizontal"] ul > li > a {
+  color: #333;
+  text-decoration: none;
+  font-size: 1.4em;
+  transition: color .3s ease-in-out;
+}
+
+/*small screens - ask Joe about this because it looks like shit when it collapses!!
+@media screen and (max-width: 44em) {
+  body {
+    margin: 1.5em 0;
+  }
+
+  nav[role="full-horizontal"] ul {
+    padding: 0 .5em;
+  }
+  nav[role="full-horizontal"] ul > li {
+    width: 100%;
+    padding: .45em .25em;
+    margin: 0 0 .55em 0;
+  }
+  nav[role="full-horizontal"] ul > li:after {
+    box-shadow: none;
+  }
+}
+
+/* End Nav CSS */
+
+/*Input Bar*/
+
+.searchresults{
+  width: 95%;
+  margin: 0 auto;
+}
+
+#search-val{
+  font-size: 3em;
+  padding: .2em;  
+  color: #999999;
+  width: 95%;
+  vertical-align: middle;
+  margin-top: 1%;
+  margin-bottom: 2%;
+}
+
+/*To manipulate serach-val placeholder color*/
+
+#search-val::-webkit-input-placeholder { /* WebKit browsers */
+    color:    #ef625b;
+    opacity:  .5;
+}
+#search-val:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color:    #ef625b;
+   opacity:  .5;
+}
+#search-val::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color:    #ef625b;
+   opacity:  .5;
+}
+#search-val:-ms-input-placeholder { /* Internet Explorer 10+ */
+   color:    #ef625b;
+   opacity:  .5;
+}
+
+/*Center results*/
+
+.results
+{
+  width: 100%;
+  margin: 0 auto;
+}
+
+/*Caption Effect*/
+
+/*Making the list items display as inline-blocks will allow us to center them be applying a centerd text-align to the parent.*/
+
+.grid li {
+    display: inline-block;
+    width: 350px;
+    margin: 0;
+    padding-right: 3em;
+    text-align: left;
+    position: relative;
+}
+
+
+/*Let’s reset the margins of the figure elements and set the position to relative. Our figcaption will be positioned absolutely, so we need to make sure it will do so inside of the figure:*/
+
+.grid figure {
+    margin: 0;
+    position: relative;
+}
+
+/*The figcaption will be positioned absolutely. By default it will be positioned in the top left corner. We won’t define any width or height here as we will do so in all the individual styles:*/
+
+.grid figcaption {
+    position: absolute;
+    top: 100px; /*this affects where the box show up*/
+    left: -20px; /*this affects where the box show up*/
+    padding: 20px;
+    background: rgba(220, 220, 220,.8);
+    color: #ed4e6e;
+}
+ 
+/*Define style for the link*/
+
+.grid figcaption a {
+    text-align: center;
+    padding: 50px 10px;
+    border-radius: 2em;
+    display: inline-block;
+    background: rgba(230, 33, 23, .8);
+    color: white;
+    text-decoration: none;
+    font-size:2em;
+    width: 360px;
+    height: 150px;
+    vertical-align: center;
+    text-align: center;
+}
+
+/*for smaller screens*/
+
+@media screen and (max-width: 31.5em) {
+    .grid {
+        padding: 10px 10px 100px 10px;
+    }
+    .grid li {
+        width: 100%;
+        min-width: 300px;
+    }
+}
+
+/*CS Style 1*/
+
+/*Let’s start with a very simple effect. We want the caption to fade in and move a bit to the right and down, creating the illusion of a 3D layer that comes out of the image.
+For that we first need to set the width and height of the figcaption and set the initial opacity to 0:*/
+
+/*We also add a transition and set the backface-visibility to hidden to avoid a jump in the text rendering in the end of the transition. You don’t have to use that if you don’t mind the little glitch.*/
+
+.cs-style-1 figcaption {
+    height: 1px;
+    width:  1px;
+    opacity: 0;
+    text-align: center;
+    backface-visibility: hidden;
+    transition: transform 0.3s, opacity 0.3s;
+    background: none;
+    margin-top: -6.5em;
+}
+
+/*
+On hover (or on touch) we will set the opacity to 1 and translate the figcaption a bit:*/
+
+.cs-style-1 figure:hover figcaption,
+.cs-style-1 figure.cs-hover figcaption {
+    opacity: 1;
+    transform: translate(15px, 15px);
+}
+
+/*Additionally, we will position the text elements:*/
+
+.fancybox-nav {
+    width: 60px;       
+}
+
+.fancybox-nav span {
+    visibility: visible;
+}
+
+.fancybox-next {
+    right: -60px;
+}
+
+.fancybox-prev {
+    left: -60px;
+}
+
