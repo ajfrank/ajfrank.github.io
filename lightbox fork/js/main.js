@@ -52,7 +52,7 @@ $(function(){
 						) //closed div class="crop" tag
 					.append($('<figcaption>')
 						.append($('<a>') // append to that ID an <a> tag
-							.attr('href', 'https://www.youtube.com/embed/'+videos[i].id.videoId+'?enablejsapi=1')  // make the attribute href of that tag as follows
+							.attr('href', 'https://www.youtube.com/embed/'+videos[i].id.videoId+'?enablejsapi=1&wmode=opaque')  // make the attribute href of that tag as follows
 								.text(videos[i].snippet.title) //inserts the following string as text
 								.attr('class', 'fancybox fancybox.iframe')
 						) //closes <a>	
