@@ -93,12 +93,17 @@ nav[role="full-horizontal"] ul > li > a {
 }
 
 /*small screens */
-/*@media only screen and (min-width: 920px) {
-  nav ul li a {
-    font-size: 1em;
-    color: green;
+@media only screen and (max-width: 1150px) {
+  nav[role="full-horizontal"] ul > li > a {
+    font-size: 2em;
   }
-}*/
+}
+
+@media only screen and (max-width: 965px) {
+  nav[role="full-horizontal"] ul > li > a {
+    font-size: 1.5em;
+  }
+}
 
 /* End Nav CSS */
 
