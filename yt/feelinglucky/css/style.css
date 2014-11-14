@@ -245,7 +245,6 @@ On hover (or on touch) we will set the opacity to 1 and translate the figcaption
 /*player css*/
 
 .arrow{
-  margin:1% 5%;
   display: inline-block;
   position: absolute;
   background: rgba(255,255,255,.6);
@@ -257,17 +256,17 @@ On hover (or on touch) we will set the opacity to 1 and translate the figcaption
 }
 
 .yplayer{
-  width: 45%;
+  width: 65%;
   margin: 0 auto;
   visibility: hidden;
 }
 
 #prev{
-  top: 50%;
-  left: 18%;
+  top: 65%;
+  left: 12%;
 }
 
 #next{
-  top: 50%;
-  right: 18%;
+  top: 65%;
+  right: 12%;
 }
