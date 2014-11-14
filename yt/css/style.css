@@ -93,13 +93,13 @@ nav[role="full-horizontal"] ul > li > a {
 }
 
 /*small screens */
-@media only screen and (max-width: 1150px) {
+@media only screen and (max-width: 1500px) {
   nav[role="full-horizontal"] ul > li > a {
     font-size: 2em;
   }
 }
 
-@media only screen and (max-width: 965px) {
+@media only screen and (max-width: 1225px) {
   nav[role="full-horizontal"] ul > li > a {
     font-size: 1.5em;
   }
