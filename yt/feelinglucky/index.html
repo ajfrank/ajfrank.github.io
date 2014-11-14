@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+
+<html>
+	
+	<head>
+		<title>YouTube Search Exploration</title>
+		<link rel="icon" href="images/logoheader.png" >
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href='http://fonts.googleapis.com/css?family=Carrois+Gothic+SC' rel='stylesheet' type='text/css'>
+		<link href='http://fonts.googleapis.com/css?family=Cantora+One' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="css/reset.css">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+
+	<body>
+
+<!-- Navigation -->
+		
+		<header>
+		  <div class="branding">
+		    <img src="images/YouTube-logo.png" id="yt">
+		  </div>
+		  
+		  <div class="navbuttons">
+	    	<nav role="full-horizontal">
+		        <ul>
+		            <li><a href="http://ajfrank.github.io/yt">Home</a></li>
+		            <li><a href="http://ajfrank.github.io/yt/feelinglucky">Feeling Lucky</a></li>
+		        </ul>
+		    </nav>
+		  </div>
+		</header>
+
+		
+
+<!-- Search Box -->
+		
+		<section class="searchresults">	
+			<form id="search">
+				<input type="text" id="search-val" placeholder="Enter YouTube search">
+			</form>
+			
+			<div id="results">
+				<ul class="grid cs-style-1" id="ulist">
+				</ul>
+			</div>
+		</section>
+
+
+<!-- iframe YT player -->
+
+		<div class="yplayer">
+			<div id="player1"></div>
+			<img class="arrow" id="prev" src="images/prev.png">
+			<img class="arrow" id="next" src="images/next.png">
+		</div>
+
+
+<!-- JS Scripts -->
+
+		<script src="https://www.youtube.com/iframe_api"></script>
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/main.js"></script>
+
+	</body>
+</html>
