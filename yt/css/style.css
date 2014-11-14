@@ -105,7 +105,6 @@ nav[role="full-horizontal"] ul > li > a {
   }
 }
 
-
 /* End Nav CSS */
 
 /*Input Bar*/
@@ -241,3 +240,20 @@ On hover (or on touch) we will set the opacity to 1 and translate the figcaption
 }
 
 /*Additionally, we will position the text elements:*/
+
+.fancybox-nav {
+    width: 60px;       
+}
+
+.fancybox-nav span {
+    visibility: visible;
+}
+
+.fancybox-next {
+    right: -60px;
+}
+
+.fancybox-prev {
+    left: -60px;
+}
+

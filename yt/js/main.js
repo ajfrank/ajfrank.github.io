@@ -54,9 +54,25 @@ $(function(){
 						.append($('<a>') // append to that ID an <a> tag
 							.attr('href', 'https://www.youtube.com/watch?v='+videos[i].id.videoId)  // make the attribute href of that tag as follows
 								.text(videos[i].snippet.title) //inserts the following string as text
+								.attr('class', 'fancybox-media')
 						) //closes <a>	
 					) //closes <figcaption>
 					)//closes <figure>
 				)//closes the <li>
 			} // closes our for loop
 	} //closes function appendVideos
+
+$(document).ready(function() {
+	$('.fancybox-media').fancybox({
+		openEffect  : 'elastic',
+		closeEffect : 'elastic',
+		padding: 0,
+		helpers : {
+			media : true
+		},
+		height: 827,
+		width: 1469,
+		aspectRatio: true,
+		scrolling: 'no'
+	});
+});
