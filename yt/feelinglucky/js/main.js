@@ -1,5 +1,4 @@
 //this function creates an <iframe> and the youtube player object
-
 var player;
 function onYouTubeIframeAPIReady(){
 	player = new YT.Player('player1',{
@@ -39,7 +38,7 @@ $(function(){
 		$("body").css("background","#fcfcfc"); //changes background color in body selector
 	}
 
-		//when our prev button is clicked, the playlist will jump to the previous video within the player
+	//when our prev button is clicked, the playlist will jump to the previous video within the player
 	$("#prev").click(function(){
 		player.previousVideo();
 	});
