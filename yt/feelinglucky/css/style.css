@@ -258,7 +258,8 @@ On hover (or on touch) we will set the opacity to 1 and translate the figcaption
   visibility: hidden;
   position: relative;
   margin: 0 auto;
-  width: 65%;
+  width: 853px;
+  height: 480px;
 }
 
 iframe{
@@ -266,11 +267,11 @@ iframe{
 }
 
 #prev{
-  top: 65%;
-  left: 12%;
+  top: 45%;
+  left: -10%;
 }
 
 #next{
-  top: 65%;
-  right: 12%;
+  top: 45%;
+  right: -10%;
 }
