@@ -16,7 +16,7 @@ $(function(){
 
 	function search(searchVal) { // getting from input above
 		var key = "AIzaSyDLetKrHvpNRUg7e--NX8pdIJK7btZl_TE"; //developers console
-		$.ajax({ //need to learn more about this
+		$.ajax({
 			url: 'https://www.googleapis.com/youtube/v3/search?part=snippet&q=' + searchVal + '&type=video&maxResults=12&key=' + key, // got from google api documentation
 			type: 'GET', //call type of request
 			success: function (data) { //data = object that google is sending us back
